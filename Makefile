@@ -1,10 +1,8 @@
 MOCHA_OPTS= --check-leaks
-REPORTER = Spec
-
-CUR_DIR := $(dir $(lastword $(MAKEFILE_LIST)))
+REPORTER = progress
 
 test: 
-	@NODE_ENV=test $(CUR_DIR)node_modules/mocha/bin/mocha \
+	@NODE_ENV=test ./node_modules/.bin/mocha \
 		--reporter $(REPORTER) \
 		$(MOCHA_OPTS)
 		
