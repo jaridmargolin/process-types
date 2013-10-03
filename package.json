@@ -1,0 +1,20 @@
+{
+  "name": "process-types",
+  "version": "0.0.1",
+  "description": "Create reusable and configurable child_process types",
+  "author": "Jarid Margolin <jaridmargolin@gmail.com>",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/jaridmargolin/process-types"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "devDependencies": {
+    "commander": "~2.0.0",
+    "mocha": "~1.9.0",
+    "chai": "~1.6.0"
+  },
+  "main": "./lib/index.js",
+  "license": "MIT"
+}
